@@ -1,0 +1,21 @@
+# vim: set ft=pylit
+
+When writing control structures there are many C idioms that can creep
+into one's code. Try and avoid these with these nice python idioms!
+
+  better = x <= y <= z
+
+Look! Many comparisons, such concise!
+
+When checking lots of things, try not to use the travesty that is:
+
+  name = 'Will'
+  if name == 'Will' or name == 'Dick' or name == 'Jim':
+    print 'Hooray!'
+
+but instead use the far nicer:
+
+  if name in ('Will', 'Dick', 'Jim'):
+    print 'Hooray!'
+
+
